@@ -1,0 +1,11 @@
+htop: htop (interactive process viewer)
+htop:
+htop: htop is an interactive text-mode (ncurses) process viewer for Linux.
+htop: It aims to be a better 'top' by providing:
+htop:   - horizontal and vertical scrolling
+htop:   - no keystroke delays
+htop:   - faster startup
+htop:   - mouse operations
+htop:
+htop:
+htop: Packaged by Georgi D. Sotirov <gdsotirov@dir.bg>
