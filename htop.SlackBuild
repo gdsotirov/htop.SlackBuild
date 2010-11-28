@@ -7,9 +7,9 @@
 . ../slack-package.conf
 
 NAME=htop
-VERSION=0.8.3
+VERSION=0.9
 ARCH=${ARCH:-i486}
-BUILD=1
+BUILD=${BUILD:-1}
 
 TMP=${TMP:-/tmp}
 CWD=${CWD:-`pwd`}
