@@ -1,4 +1,4 @@
-htop: htop (interactive process viewer)
+htop: htop (an interactive process viewer)
 htop:
 htop: htop is an interactive text-mode (ncurses) process viewer for Linux.
 htop: It aims to be a better 'top' by providing:
