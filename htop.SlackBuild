@@ -19,13 +19,13 @@
 #
 # Visit SlackPack at http://sotirov-bg.net/slackpack/
 #
-# $Id: htop.SlackBuild,v 1.6 2012/02/16 19:00:28 gsotirov Exp $
+# $Id: htop.SlackBuild,v 1.7 2012/11/17 17:46:02 gsotirov Exp $
 #
 
 . ../../slack-package.conf
 
 NAME=htop
-VERSION=1.0.1
+VERSION=1.0.2
 ARCH=${ARCH:-i486}
 BUILD=${BUILD:-1}
 
