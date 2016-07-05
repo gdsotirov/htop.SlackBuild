@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Slackware build script for htop
-# Copyright (C) 2010-2011 Georgi D. Sotirov <gdsotirov@dir.bg>
+# Copyright (C) 2010-2016 Georgi D. Sotirov <gdsotirov@dir.bg>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -19,14 +19,14 @@
 #
 # Visit SlackPack at http://sotirov-bg.net/slackpack/
 #
-# $Id: htop.SlackBuild,v 1.8 2014/04/26 10:55:08 gsotirov Exp $
+# $Id: htop.SlackBuild,v 1.9 2016/07/05 15:41:12 gsotirov Exp $
 #
 
 . ../../slack-package.conf
 
 NAME=htop
-VERSION=1.0.3
-ARCH=${ARCH:-i486}
+VERSION=2.0.1
+ARCH=${ARCH:-i586}
 BUILD=${BUILD:-1}
 
 TMP=${TMP:-/tmp}
@@ -64,8 +64,13 @@ CXXFLAGS=$SLKCFLAGS \
             --prefix=/usr \
             --sysconfdir=/etc \
             --mandir=/usr/man \
+            --docdir=/usr/doc/$NAME-$VERSION \
+            --enable-openvz \
+            --enable-cgroup \
+            --enable-vserver \
             --enable-taskstats \
-            --enable-unicode || exit 4
+            --enable-unicode \
+            --enable-linux-affinity || exit 4
 
 # Build & install
 make -j4 || exit 5
